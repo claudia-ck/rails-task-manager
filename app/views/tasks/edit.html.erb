@@ -12,11 +12,8 @@
   </div>
 
   <div>
-    <%= f.label :completed %>
     <%= f.check_box :completed %>
+    <span><%= @task.completed ? "Completed" : "Not Completed" %></span>
   </div>
-
-
-
   <%= f.submit %>
 <% end %>
